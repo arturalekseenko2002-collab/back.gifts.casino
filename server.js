@@ -6,6 +6,13 @@ import cors from "cors";
 import { Telegraf, Markup } from "telegraf";
 import User from "./models/User.js";
 
+import path from "path";
+import fs from "fs";
+
+console.log("CWD:", process.cwd());
+console.log("ENV FILE EXISTS:", fs.existsSync(path.resolve(process.cwd(), ".env")));
+console.log("MONGODB_URI at runtime:", process.env.MONGODB_URI);
+
 const app = express();
 
 // CORS

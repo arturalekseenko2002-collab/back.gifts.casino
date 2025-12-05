@@ -25,10 +25,14 @@ app.use(
 );
 app.use(express.json());
 
-// MongoDB
-console.log("MONGODB_URI at runtime:", process.env.MONGODB_URI);
+// ВРЕМЕННО, чтобы проверить подключение
+const MONGODB_URI =
+  "mongodb+srv://arturalekseenko2002_db_user:TS0iwZtIDLf1Clg9@giftscasino.uslazus.mongodb.net/?retryWrites=true&w=majority&appName=GIFTSCASINO";
+
+console.log("MONGODB_URI at runtime:", MONGODB_URI);
+
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect(MONGODB_URI)
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.error("❌ MongoDB error:", err));
 

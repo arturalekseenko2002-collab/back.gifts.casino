@@ -35,7 +35,7 @@ mongoose
 // ==== helper’ы рефералки ===
 
 function genRefCode() {
-  return Math.random().toString(36).slice(2, 8); // 6 символов
+  return Math.random().toString(36).slice(2, 8); // 6 символв
 }
 
 async function ensureUserRefCode(user) {

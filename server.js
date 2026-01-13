@@ -32,7 +32,7 @@ mongoose
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.error("❌ MongoDB error:", err));
 
-// ==== helper’ы рефералки ===
+// ==== helper’ы рефераки ===
 
 function genRefCode() {
   return Math.random().toString(36).slice(2, 8); // 6 симолов

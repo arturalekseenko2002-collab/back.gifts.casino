@@ -9,9 +9,9 @@ const userSchema = new mongoose.Schema(
     photoUrl: String,
 
     referral: {
-      code: String,              // мой реф-код
-      referredBy: String,        // кто пригласил (username или telegramId)
-      referredByCode: String,    // реф-код пригласившего
+      code: String,       
+      referredBy: String,  
+      referredByCode: String,
       referredAt: Date,
       referralsCount: { type: Number, default: 0 },
       referrals: [

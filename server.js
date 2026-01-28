@@ -135,7 +135,7 @@ app.post("/register-user", async (req, res) => {
   }
 });
 
-// получить юзера
+// получить юера
 app.get("/get-user", async (req, res) => {
   try {
     const { telegramId } = req.query;
